@@ -1,0 +1,17 @@
+{
+  "name": "language-cr-basic",
+  "version": "0.0.0",
+  "description": "CR-Basic language support in Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willi_kappler/language-cr-basic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/willi_kappler/language-cr-basic/issues"
+  },
+  "license": "MIT"
+}
