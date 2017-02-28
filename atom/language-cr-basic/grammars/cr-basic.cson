@@ -15,7 +15,7 @@
       "name": "constant.numeric.cr-basic"
   }
   {
-      "match": "\\b(String|Boolean|Long|FP2|IEEE4|UNIT2|UINT4)\\b",
+      "match": "\\b(String|Boolean|Long|Float|FP2|IEEE4|UNIT2|UINT4)\\b",
       "name": "support.type.cr-basic"
   }
   {
