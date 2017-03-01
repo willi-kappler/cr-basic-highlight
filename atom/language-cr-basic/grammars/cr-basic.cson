@@ -3,11 +3,11 @@
 'fileTypes': ['CR1', 'cr1']
 'patterns': [
   {
-      "match": "\\b(StationName|Const|Dim|Alias|Units|DataTable|EndTable|Sub|EndSub|If|EndIf|Then|Else|BeginProg|For|Step|Next|Call|Scan|NextScan|SlowSequence|EndSequence|EndProg|Do|While|Loop|ExitFor|As)\\b",
+      "match": "\\b(StationName|Const|Dim|Public|Alias|Units|DataTable|EndTable|Sub|EndSub|If|EndIf|Then|Else|BeginProg|For|To|Step|Next|Call|Scan|NextScan|SlowSequence|EndSequence|EndProg|Do|While|Loop|ExitFor|As)\\b",
       "name": "keyword.control.cr-basic"
   }
   {
-      "match": "\\b(NULL|true|false|TRUE|FALSE)\\b",
+      "match": "\\b(NULL|true|false|TRUE|FALSE|True|False)\\b",
       "name": "constant.language.cr-basic"
   }
   {
@@ -15,11 +15,11 @@
       "name": "constant.numeric.cr-basic"
   }
   {
-      "match": "\\b(String|Boolean|Long|Float|FP2|IEEE4|UNIT2|UINT4)\\b",
+      "match": "\\b(String|Boolean|Long|Float|FP2|IEEE4|UINT2|UINT4)\\b",
       "name": "support.type.cr-basic"
   }
   {
-      "match": "\\b(SerialOpen|SerialOut|SerialIn|SerialOutBlock|SerialClose|SetStatus|PortSet|CallTable|DataInterval|TableFile|Average|Maximum|FieldNames|Totalize|Minimum|CardOut|WindVector|DataEvent|Sample|TimeIntoInterval|FileOpen|FileRead|FileClose|NaN|CheckSum|CHR|Trim)\\b",
+      "match": "\\b(SerialOpen|SerialOut|SerialIn|SerialOutBlock|SerialClose|SetStatus|PortSet|CallTable|DataInterval|TableFile|Average|Maximum|FieldNames|Totalize|Minimum|CardOut|WindVector|DataEvent|Sample|TimeIntoInterval|FileOpen|FileRead|FileClose|NaN|CheckSum|CHR|Trim|TCPOpen|TCPClose)\\b",
       "name": "support.function.cr-basic"
   }
   {
