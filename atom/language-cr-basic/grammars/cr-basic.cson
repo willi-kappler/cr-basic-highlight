@@ -23,7 +23,7 @@
       "name": "support.function.cr-basic"
   }
   {
-      "match": "\\b(AND|OR|>|<|>>|<<|=)\\b",
+      "match": "\\b(AND|OR|NOT|>|<|>>|<<|=)\\b",
       "name": "keyword.operator.cr-basic"
   }
   {
