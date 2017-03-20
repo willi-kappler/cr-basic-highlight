@@ -1,0 +1,58 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "CR Basic",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+        			"match": "\\b(StationName|Const|Dim|Public|Alias|Units|DataTable|EndTable|Sub|EndSub|If|EndIf|Then|Else|BeginProg|For|To|Step|Next|Call|Scan|NextScan|SlowSequence|EndSequence|EndProg|Do|While|Loop|ExitFor|As)\\b",
+      				"name": "keyword.control.cr-basic"
+  				},
+  				{
+      				"match": "\\b(NULL|true|false|TRUE|FALSE|True|False)\\b",
+      				"name": "constant.language.cr-basic"
+  				},
+  				{
+      				"match": "\\b((&(b|B)[0-1]*)(&(h|H)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\\b",
+      				"name": "constant.numeric.cr-basic"
+  				},
+  				{
+      				"match": "\\b(String|Boolean|Long|Float|FP2|IEEE4|UINT2|UINT4)\\b",
+      				"name": "support.type.cr-basic"
+  				},
+  				{
+      				"match": "\\b(SerialOpen|SerialOut|SerialIn|SerialOutBlock|SerialClose|SetStatus|PortSet|CallTable|DataInterval|TableFile|Average|Maximum|FieldNames|Totalize|Minimum|CardOut|WindVector|DataEvent|Sample|TimeIntoInterval|FileOpen|FileRead|FileClose|NaN|CheckSum|CHR|Trim|TCPOpen|TCPClose)\\b",
+      				"name": "support.function.cr-basic"
+  				},
+  				{
+      				"match": "\\b(AND|OR|NOT|>|<|>>|<<|=)\\b",
+      				"name": "keyword.operator.cr-basic"
+  				},
+  				{
+      				"match": "\\'.*\\n",
+      				"name": "comment.block.cr-basic"
+  				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.cr-basic",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.cr-basic",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.cr-basic"
+}

@@ -1,0 +1,26 @@
+{
+    "name": "cr-basic",
+    "displayName": "cr-basic",
+    "description": "CR-Basic syntac highlighting",
+    "version": "0.0.1",
+    "publisher": "WilliKappler",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cr-basic",
+            "aliases": ["CR Basic", "cr-basic"],
+            "extensions": [".CR1"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cr-basic",
+            "scopeName": "source.cr-basic",
+            "path": "./syntaxes/cr-basic.tmLanguage.json"
+        }]
+    }
+}
