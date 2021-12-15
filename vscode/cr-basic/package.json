@@ -14,7 +14,7 @@
         "languages": [{
             "id": "cr-basic",
             "aliases": ["CR Basic", "cr-basic"],
-            "extensions": [".CR1"],
+            "extensions": [".crb", ".cr1", ".cr1x", ".cr300", ".cr6", ".dld"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
